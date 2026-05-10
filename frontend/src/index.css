@@ -1,0 +1,30 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+code {
+  background: #e2e8f0;
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+.error {
+  color: #b91c1c;
+  font-weight: 600;
+}
