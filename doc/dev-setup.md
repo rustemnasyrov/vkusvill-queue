@@ -11,6 +11,12 @@
 docker compose -f docker-compose.dev.yml up --build
 ```
 
+Если менялись зависимости (`backend/requirements.txt` или `frontend/package.json`), обязательно пересоберите:
+
+```bash
+docker compose -f docker-compose.dev.yml up -d --build
+```
+
 Сервисы:
 - Frontend: `http://localhost:5173`
 - Backend: `http://localhost:8000`
@@ -36,3 +42,8 @@ docker compose -f docker-compose.dev.yml up --build
 ```bash
 docker compose -f docker-compose.dev.yml down
 ```
+
+## 6) Тестовые пользователи (Этап 2)
+
+- manager: `manager@local.dev` / `manager123`
+- courier: `courier@local.dev` / `courier123`
